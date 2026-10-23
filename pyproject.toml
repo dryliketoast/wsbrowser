@@ -1,0 +1,28 @@
+[project]
+name = "wsbrowser"
+version = "0.1.0"
+requires-python = ">=3.13"
+description = "IRC-style terminal client for WebSocket servers"
+readme = "README.md"
+dependencies = [
+    "textual>=8.2.8",
+    "websockets>=17.1",
+]
+
+[project.scripts]
+wsbrowser = "wsbrowser.__main__:main"
+
+[build-system]
+requires = ["uv_build>=0.8"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[dependency-groups]
+build = [
+    "pyinstaller>=6.22.3",
+]
+dev = [
+    "pytest>=9.1.1",
+]
