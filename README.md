@@ -2,6 +2,8 @@
 
 An IRC-style terminal client for WebSocket servers: connect to a URL, type messages, and watch the responses scroll by. Useful for poking at and debugging WebSocket endpoints, in the way telnet is for plain TCP.
 
+![wsbrowser demo](docs/demo.gif)
+
 Built with [Textual](https://textual.textualize.io/) and [websockets](https://websockets.readthedocs.io/); managed with [uv](https://docs.astral.sh/uv/). Requires Python 3.13+.
 
 The screen is a status bar (green with `connected: <url>` when connected), a scrolling timestamped log, and an input line.
